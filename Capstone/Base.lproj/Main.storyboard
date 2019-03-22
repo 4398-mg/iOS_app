@@ -121,7 +121,6 @@
         <!--View Controller-->
         <scene sceneID="hGm-gT-et4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Vt-0b-Sb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="wfK-Ib-gsT" customClass="ViewController" customModule="Capstone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="feK-yM-1lR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -201,6 +200,22 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsa-n6-Xmk">
+                                <rect key="frame" x="38" y="51" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="HUe-PK-N6c" kind="show" id="weB-u9-CiD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiM-7r-5tX">
+                                <rect key="frame" x="142" y="563" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test Rest Api"/>
+                                <connections>
+                                    <segue destination="gHs-2o-gi9" kind="show" id="l1m-7i-gKc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ls4-v6-VHL"/>
@@ -211,8 +226,59 @@
                         <outlet property="tempoInput" destination="jI0-eI-QaK" id="qsv-XY-3Kt"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Vt-0b-Sb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1568.8" y="26.53673163418291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NV3-Pc-eYP">
+            <objects>
+                <viewController id="gHs-2o-gi9" customClass="ViewController" customModule="Capstone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ieG-iI-KIS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Desired Endpoint" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vz1-Fl-Uan">
+                                <rect key="frame" x="84" y="107" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MmQ-0o-cyH" userLabel="endpointInput">
+                                <rect key="frame" x="64" y="149" width="246" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5F-NN-eng">
+                                <rect key="frame" x="136" y="209" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Response"/>
+                                <connections>
+                                    <action selector="getResponseTappedWithSender:" destination="gHs-2o-gi9" eventType="touchUpInside" id="aIg-lK-xFr"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="API Response" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kTO-iG-wyz" userLabel="responseField">
+                                <rect key="frame" x="44" y="284" width="296" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VSI-0f-LKn"/>
+                    </view>
+                    <connections>
+                        <outlet property="endpointInput" destination="MmQ-0o-cyH" id="7GF-wj-DAA"/>
+                        <outlet property="responseField" destination="kTO-iG-wyz" id="m9j-w7-nzk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRn-KA-AHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1568.8" y="796.55172413793105"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Cai-jx-vAX">
@@ -275,4 +341,7 @@
     <resources>
         <image name="btn_google_signin_dark_focus_ios.png" width="70" height="48"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="weB-u9-CiD"/>
+    </inferredMetricsTieBreakers>
 </document>

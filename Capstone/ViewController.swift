@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate{
+    
     @IBOutlet weak var genreInput: UITextField!
     @IBOutlet weak var tempoInput: UITextField!
     @IBOutlet weak var durationInput: UITextField!
+    
     let genres = ["jazz", "rock", "pop"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +33,39 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return genres[row]
     }
-}
     
+    @IBOutlet weak var endpointInput : UITextField!
+    @IBOutlet weak var responseField : UITextView!
+    var items = [responseObject]()
+    var response : String = ""
+    //var endpoints : Dictionary<String, Any>
+    
+    
+    @IBAction func getResponseTapped(sender: UIButton){
+            responseField.text = "get response tapped"
+        RestAPIManager.SharedInstance.getResponse { (json:JSON) in
+            self.response = json.description
+        }
+            
+            
+            
+    
+            responseField.text = response
+        
+        }
+    
+                
+        
+
+    }
+    
+    
+        //responseField.text = "results"
+    
+    
+    
+
+    
+
 
 
