@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8314D91B6E5794AF8AB2CF7E /* Pods_Capstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B14995B41CC6968C45D81C /* Pods_Capstone.framework */; };
+		95DC9A6E224551D000B30A74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95DC9A6D224551D000B30A74 /* GoogleService-Info.plist */; };
 		95E774A0223E905700166842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7749F223E905700166842 /* AppDelegate.swift */; };
 		95E774A2223E905700166842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E774A1223E905700166842 /* ViewController.swift */; };
 		95E774A5223E905700166842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E774A3223E905700166842 /* Main.storyboard */; };
 		95E774AA223E905700166842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E774A8223E905700166842 /* LaunchScreen.storyboard */; };
 		95E774FB223FD7E200166842 /* btn_google_signin_dark_focus_ios@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95E774FA223FD7E200166842 /* btn_google_signin_dark_focus_ios@2x.png */; };
+		95E774FD22412B5600166842 /* GenrePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E774FC22412B5600166842 /* GenrePickerViewController.swift */; };
+		95E774FF22413C0400166842 /* TempoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E774FE22413C0400166842 /* TempoPickerViewController.swift */; };
+		95E7750122413E7600166842 /* DurationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7750022413E7600166842 /* DurationPickerViewController.swift */; };
+		95E775032241DECA00166842 /* ParameterSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E775022241DECA00166842 /* ParameterSelectionViewController.swift */; };
+		95E775052242812C00166842 /* SignOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E775042242812C00166842 /* SignOnViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D46BC12BD5A2038EB4BEA80 /* Pods-Capstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone.release.xcconfig"; path = "Target Support Files/Pods-Capstone/Pods-Capstone.release.xcconfig"; sourceTree = "<group>"; };
+		1DCB55F2B1B280AA1AAE276D /* Pods-Capstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone.debug.xcconfig"; path = "Target Support Files/Pods-Capstone/Pods-Capstone.debug.xcconfig"; sourceTree = "<group>"; };
+		75B14995B41CC6968C45D81C /* Pods_Capstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DC9A6D224551D000B30A74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		95E7749C223E905700166842 /* Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E7749F223E905700166842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E774A1223E905700166842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,11 @@
 		95E774A9223E905700166842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95E774AB223E905700166842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95E774FA223FD7E200166842 /* btn_google_signin_dark_focus_ios@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_google_signin_dark_focus_ios@2x.png"; path = "../../../Downloads/google_signin_buttons/ios/2x/btn_google_signin_dark_focus_ios@2x.png"; sourceTree = "<group>"; };
+		95E774FC22412B5600166842 /* GenrePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerViewController.swift; sourceTree = "<group>"; };
+		95E774FE22413C0400166842 /* TempoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoPickerViewController.swift; sourceTree = "<group>"; };
+		95E7750022413E7600166842 /* DurationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPickerViewController.swift; sourceTree = "<group>"; };
+		95E775022241DECA00166842 /* ParameterSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSelectionViewController.swift; sourceTree = "<group>"; };
+		95E775042242812C00166842 /* SignOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOnViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8314D91B6E5794AF8AB2CF7E /* Pods_Capstone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F7442E2C885B0A4CB6F8B7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DCB55F2B1B280AA1AAE276D /* Pods-Capstone.debug.xcconfig */,
+				1D46BC12BD5A2038EB4BEA80 /* Pods-Capstone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		95E77493223E905700166842 = {
 			isa = PBXGroup;
 			children = (
 				95E7749E223E905700166842 /* Capstone */,
 				95E7749D223E905700166842 /* Products */,
+				6F7442E2C885B0A4CB6F8B7C /* Pods */,
+				9D5E7DCDFB991C5566254D56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +83,27 @@
 			isa = PBXGroup;
 			children = (
 				95E7749F223E905700166842 /* AppDelegate.swift */,
-				95E774A1223E905700166842 /* ViewController.swift */,
 				95E774A3223E905700166842 /* Main.storyboard */,
+				95E775042242812C00166842 /* SignOnViewController.swift */,
+				95E774A1223E905700166842 /* ViewController.swift */,
+				95E775022241DECA00166842 /* ParameterSelectionViewController.swift */,
+				95E774FC22412B5600166842 /* GenrePickerViewController.swift */,
+				95E774FE22413C0400166842 /* TempoPickerViewController.swift */,
+				95E7750022413E7600166842 /* DurationPickerViewController.swift */,
 				95E774FA223FD7E200166842 /* btn_google_signin_dark_focus_ios@2x.png */,
 				95E774A8223E905700166842 /* LaunchScreen.storyboard */,
 				95E774AB223E905700166842 /* Info.plist */,
+				95DC9A6D224551D000B30A74 /* GoogleService-Info.plist */,
 			);
 			path = Capstone;
+			sourceTree = "<group>";
+		};
+		9D5E7DCDFB991C5566254D56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75B14995B41CC6968C45D81C /* Pods_Capstone.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95E774AE223E905700166842 /* Build configuration list for PBXNativeTarget "Capstone" */;
 			buildPhases = (
+				3CEE8EF04306CAE1E4EBC493 /* [CP] Check Pods Manifest.lock */,
 				95E77498223E905700166842 /* Sources */,
 				95E77499223E905700166842 /* Frameworks */,
 				95E7749A223E905700166842 /* Resources */,
+				87C464C1C2203744ADDD32F0 /* [CP] Embed Pods Frameworks */,
+				18534FA2346E7970CB742C36 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95E774AA223E905700166842 /* LaunchScreen.storyboard in Resources */,
+				95DC9A6E224551D000B30A74 /* GoogleService-Info.plist in Resources */,
 				95E774A5223E905700166842 /* Main.storyboard in Resources */,
 				95E774FB223FD7E200166842 /* btn_google_signin_dark_focus_ios@2x.png in Resources */,
 			);
@@ -130,13 +176,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18534FA2346E7970CB742C36 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Capstone/Pods-Capstone-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Capstone/Pods-Capstone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CEE8EF04306CAE1E4EBC493 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Capstone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87C464C1C2203744ADDD32F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Capstone/Pods-Capstone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Capstone/Pods-Capstone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95E77498223E905700166842 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95E774FF22413C0400166842 /* TempoPickerViewController.swift in Sources */,
+				95E775052242812C00166842 /* SignOnViewController.swift in Sources */,
+				95E775032241DECA00166842 /* ParameterSelectionViewController.swift in Sources */,
+				95E7750122413E7600166842 /* DurationPickerViewController.swift in Sources */,
 				95E774A2223E905700166842 /* ViewController.swift in Sources */,
 				95E774A0223E905700166842 /* AppDelegate.swift in Sources */,
+				95E774FD22412B5600166842 /* GenrePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +406,7 @@
 		};
 		95E774AF223E905700166842 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCB55F2B1B280AA1AAE276D /* Pods-Capstone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +425,7 @@
 		};
 		95E774B0223E905700166842 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D46BC12BD5A2038EB4BEA80 /* Pods-Capstone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
