@@ -9,5 +9,6 @@ target 'Capstone' do
   pod 'GoogleSignIn'
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
+  pod 'SwiftyJSON'
 
 end
