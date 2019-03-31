@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8314D91B6E5794AF8AB2CF7E /* Pods_Capstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B14995B41CC6968C45D81C /* Pods_Capstone.framework */; };
 		95DC9A6E224551D000B30A74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95DC9A6D224551D000B30A74 /* GoogleService-Info.plist */; };
+		95E1A784225127A600333491 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1A783225127A600333491 /* PlayerViewController.swift */; };
+		95E1A7862251297300333491 /* The Big Country.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95E1A7852251297300333491 /* The Big Country.mp3 */; };
 		95E774A0223E905700166842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7749F223E905700166842 /* AppDelegate.swift */; };
 		95E774A2223E905700166842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E774A1223E905700166842 /* ViewController.swift */; };
 		95E774A5223E905700166842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E774A3223E905700166842 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		647D12C4862AE0EDEEB52B7D /* Pods-Capstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capstone/Pods-Capstone.release.xcconfig"; sourceTree = "<group>"; };
 		75B14995B41CC6968C45D81C /* Pods_Capstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DC9A6D224551D000B30A74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95E1A783225127A600333491 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		95E1A7852251297300333491 /* The Big Country.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Big Country.mp3"; sourceTree = "<group>"; };
 		95E7749C223E905700166842 /* Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E7749F223E905700166842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E774A1223E905700166842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			children = (
 				95E7749F223E905700166842 /* AppDelegate.swift */,
 				95E774A3223E905700166842 /* Main.storyboard */,
+				95E1A783225127A600333491 /* PlayerViewController.swift */,
 				D245CB8A224849FC00797517 /* RestAPIManager.swift */,
 				95E775042242812C00166842 /* SignOnViewController.swift */,
 				95E774A1223E905700166842 /* ViewController.swift */,
@@ -104,6 +109,7 @@
 				95E774A8223E905700166842 /* LaunchScreen.storyboard */,
 				95E774AB223E905700166842 /* Info.plist */,
 				95DC9A6D224551D000B30A74 /* GoogleService-Info.plist */,
+				95E1A7852251297300333491 /* The Big Country.mp3 */,
 			);
 			path = Capstone;
 			sourceTree = "<group>";
@@ -151,6 +157,11 @@
 				TargetAttributes = {
 					95E7749B223E905700166842 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -179,6 +190,7 @@
 			files = (
 				95E774AA223E905700166842 /* LaunchScreen.storyboard in Resources */,
 				95DC9A6E224551D000B30A74 /* GoogleService-Info.plist in Resources */,
+				95E1A7862251297300333491 /* The Big Country.mp3 in Resources */,
 				95E774A5223E905700166842 /* Main.storyboard in Resources */,
 				95E774FB223FD7E200166842 /* btn_google_signin_dark_focus_ios@2x.png in Resources */,
 			);
@@ -277,6 +289,7 @@
 				95E774A2223E905700166842 /* ViewController.swift in Sources */,
 				95E774A0223E905700166842 /* AppDelegate.swift in Sources */,
 				95E774FD22412B5600166842 /* GenrePickerViewController.swift in Sources */,
+				95E1A784225127A600333491 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
