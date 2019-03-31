@@ -10,5 +10,6 @@ target 'Capstone' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'SwiftyJSON'
+  pod 'Alamofire'
 
 end

@@ -13,7 +13,6 @@
 		95E774A2223E905700166842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E774A1223E905700166842 /* ViewController.swift */; };
 		95E774A5223E905700166842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E774A3223E905700166842 /* Main.storyboard */; };
 		95E774AA223E905700166842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E774A8223E905700166842 /* LaunchScreen.storyboard */; };
-		95E774FB223FD7E200166842 /* btn_google_signin_dark_focus_ios@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95E774FA223FD7E200166842 /* btn_google_signin_dark_focus_ios@2x.png */; };
 		95E774FD22412B5600166842 /* GenrePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E774FC22412B5600166842 /* GenrePickerViewController.swift */; };
 		95E774FF22413C0400166842 /* TempoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E774FE22413C0400166842 /* TempoPickerViewController.swift */; };
 		95E7750122413E7600166842 /* DurationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7750022413E7600166842 /* DurationPickerViewController.swift */; };
@@ -21,6 +20,7 @@
 		95E775052242812C00166842 /* SignOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E775042242812C00166842 /* SignOnViewController.swift */; };
 		D245CB8B224849FC00797517 /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245CB8A224849FC00797517 /* RestAPIManager.swift */; };
 		D245CB8D22484A6B00797517 /* restAPItest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245CB8C22484A6B00797517 /* restAPItest.swift */; };
+		D28735DC224C0E4900126B53 /* btn_google_signin_dark_pressed_ios@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D28735DB224C0E4900126B53 /* btn_google_signin_dark_pressed_ios@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,6 @@
 		95E774A4223E905700166842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95E774A9223E905700166842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95E774AB223E905700166842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95E774FA223FD7E200166842 /* btn_google_signin_dark_focus_ios@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_google_signin_dark_focus_ios@2x.png"; path = "../../../Downloads/google_signin_buttons/ios/2x/btn_google_signin_dark_focus_ios@2x.png"; sourceTree = "<group>"; };
 		95E774FC22412B5600166842 /* GenrePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerViewController.swift; sourceTree = "<group>"; };
 		95E774FE22413C0400166842 /* TempoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoPickerViewController.swift; sourceTree = "<group>"; };
 		95E7750022413E7600166842 /* DurationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPickerViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +43,8 @@
 		95E775042242812C00166842 /* SignOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOnViewController.swift; sourceTree = "<group>"; };
 		D245CB8A224849FC00797517 /* RestAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIManager.swift; sourceTree = "<group>"; };
 		D245CB8C22484A6B00797517 /* restAPItest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restAPItest.swift; sourceTree = "<group>"; };
+		D28735DB224C0E4900126B53 /* btn_google_signin_dark_pressed_ios@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_google_signin_dark_pressed_ios@2x.png"; sourceTree = "<group>"; };
+		D28735DD224C0E6D00126B53 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +67,7 @@
 				386FE61B988B99C4E6D5873D /* Pods-Capstone.debug.xcconfig */,
 				647D12C4862AE0EDEEB52B7D /* Pods-Capstone.release.xcconfig */,
 			);
-			path = Pods;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		95E77493223E905700166842 = {
@@ -95,12 +96,13 @@
 				D245CB8A224849FC00797517 /* RestAPIManager.swift */,
 				95E775042242812C00166842 /* SignOnViewController.swift */,
 				95E774A1223E905700166842 /* ViewController.swift */,
+				D28735DD224C0E6D00126B53 /* MyPlayground.playground */,
 				D245CB8C22484A6B00797517 /* restAPItest.swift */,
+				D28735DB224C0E4900126B53 /* btn_google_signin_dark_pressed_ios@2x.png */,
 				95E775022241DECA00166842 /* ParameterSelectionViewController.swift */,
 				95E774FC22412B5600166842 /* GenrePickerViewController.swift */,
 				95E774FE22413C0400166842 /* TempoPickerViewController.swift */,
 				95E7750022413E7600166842 /* DurationPickerViewController.swift */,
-				95E774FA223FD7E200166842 /* btn_google_signin_dark_focus_ios@2x.png */,
 				95E774A8223E905700166842 /* LaunchScreen.storyboard */,
 				95E774AB223E905700166842 /* Info.plist */,
 				95DC9A6D224551D000B30A74 /* GoogleService-Info.plist */,
@@ -178,9 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				95E774AA223E905700166842 /* LaunchScreen.storyboard in Resources */,
+				D28735DC224C0E4900126B53 /* btn_google_signin_dark_pressed_ios@2x.png in Resources */,
 				95DC9A6E224551D000B30A74 /* GoogleService-Info.plist in Resources */,
 				95E774A5223E905700166842 /* Main.storyboard in Resources */,
-				95E774FB223FD7E200166842 /* btn_google_signin_dark_focus_ios@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +197,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Capstone/Pods-Capstone-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Capstone/Pods-Capstone-resources.sh",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -206,7 +208,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Capstone/Pods-Capstone-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capstone/Pods-Capstone-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3CEE8EF04306CAE1E4EBC493 /* [CP] Check Pods Manifest.lock */ = {
@@ -239,7 +241,8 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Capstone/Pods-Capstone-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Capstone/Pods-Capstone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
@@ -250,6 +253,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
@@ -258,7 +262,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Capstone/Pods-Capstone-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capstone/Pods-Capstone-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -420,11 +424,11 @@
 		};
 		95E774AF223E905700166842 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DCB55F2B1B280AA1AAE276D /* Pods-Capstone.debug.xcconfig */;
+			baseConfigurationReference = 386FE61B988B99C4E6D5873D /* Pods-Capstone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2NUK87L932;
+				DEVELOPMENT_TEAM = VQ26FZQV34;
 				INFOPLIST_FILE = Capstone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -439,11 +443,11 @@
 		};
 		95E774B0223E905700166842 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D46BC12BD5A2038EB4BEA80 /* Pods-Capstone.release.xcconfig */;
+			baseConfigurationReference = 647D12C4862AE0EDEEB52B7D /* Pods-Capstone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2NUK87L932;
+				DEVELOPMENT_TEAM = VQ26FZQV34;
 				INFOPLIST_FILE = Capstone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
