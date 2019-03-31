@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ParameterSelectionViewController: UIViewController, DisplayViewControllerDelegate{
     
-    @IBOutlet weak var genreLabel: UILabel!
+    @IBOutlet weak var genreLabel:UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -26,5 +29,21 @@ class ParameterSelectionViewController: UIViewController, DisplayViewControllerD
             genreVC.delegate = self
         }
     }
-
+    
+//    @IBAction func closeButtonTapped(_ sender: UIButton) {
+//        self.dismiss(animated: true, completion: nil)
+//    }
+    
+    @IBAction func logOutTapped(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            self.dismiss(animated: true, completion: nil)
+            print("Signed Out")
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
+    
 }
+

@@ -10,9 +10,9 @@ import UIKit
 protocol DisplayViewControllerDelegate:NSObjectProtocol{
     func genreSelected(choice:String)
 }
+var genreChoice:String = ""
 class GenrePickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
     let genres = ["", "blues", "classical", "country", "electronic", "folk", "jazz", "pop", "rock"]
-    var genreChoice:String = ""
     @IBOutlet weak var genrePicker:UIPickerView!
     weak var delegate:DisplayViewControllerDelegate?
     
