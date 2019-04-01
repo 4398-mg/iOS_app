@@ -9,12 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController{
-    @IBOutlet weak var genreLabel: UILabel!
-    var labelString:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     
 }
     

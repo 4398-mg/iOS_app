@@ -35,13 +35,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
             Auth.auth().signInAndRetrieveData(with: credential){(result, error) in
                 if error == nil{
-                    print(result?.user.email)
-                    print(result?.user.displayName)
+                    print(result?.user.email as Any)
+                    print(result?.user.displayName as Any)
             
                 }else{
-                    print(error?.localizedDescription)
+                    print(error?.localizedDescription as Any)
                 }
             }
+        }
+        
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            print("Signed Out")
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
         }
         
     }

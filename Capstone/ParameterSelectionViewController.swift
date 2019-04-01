@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import GoogleSignIn
 
 class ParameterSelectionViewController: UIViewController, DisplayViewControllerDelegate{
     
@@ -35,14 +36,8 @@ class ParameterSelectionViewController: UIViewController, DisplayViewControllerD
 //    }
     
     @IBAction func logOutTapped(_ sender: Any) {
-        let firebaseAuth = Auth.auth()
-        do {
-            try firebaseAuth.signOut()
-            self.dismiss(animated: true, completion: nil)
-            print("Signed Out")
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
+        GIDSignIn.sharedInstance()?.signOut()
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
