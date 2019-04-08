@@ -10,13 +10,21 @@ import UIKit
 import GoogleSignIn
 import Firebase
 class SignOnViewController: UIViewController, GIDSignInUIDelegate {
-    
+    @IBOutlet var confirmAndContinue: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         GIDSignIn.sharedInstance().uiDelegate = self
+        confirmAndContinue.isEnabled = false
+        
+        if(Auth.auth().currentUser != nil){
+            confirmAndContinue.isEnabled = true
+        }
         
     }
+    
 
+    
+    
 }

@@ -11,6 +11,7 @@
 		95DC9A6E224551D000B30A74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95DC9A6D224551D000B30A74 /* GoogleService-Info.plist */; };
 		95E1A784225127A600333491 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1A783225127A600333491 /* PlayerViewController.swift */; };
 		95E1A7862251297300333491 /* The Big Country.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95E1A7852251297300333491 /* The Big Country.mp3 */; };
+		95E1A7AE225AB3DE00333491 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1A7AD225AB3DE00333491 /* Request.swift */; };
 		95E774A0223E905700166842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7749F223E905700166842 /* AppDelegate.swift */; };
 		95E774A2223E905700166842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E774A1223E905700166842 /* ViewController.swift */; };
 		95E774A5223E905700166842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E774A3223E905700166842 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		95DC9A6D224551D000B30A74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		95E1A783225127A600333491 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		95E1A7852251297300333491 /* The Big Country.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Big Country.mp3"; sourceTree = "<group>"; };
+		95E1A7AD225AB3DE00333491 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		95E7749C223E905700166842 /* Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E7749F223E905700166842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E774A1223E905700166842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				95E774FC22412B5600166842 /* GenrePickerViewController.swift */,
 				95E774FE22413C0400166842 /* TempoPickerViewController.swift */,
 				95E7750022413E7600166842 /* DurationPickerViewController.swift */,
+				95E1A7AD225AB3DE00333491 /* Request.swift */,
 				95E774A8223E905700166842 /* LaunchScreen.storyboard */,
 				95E774AB223E905700166842 /* Info.plist */,
 				95DC9A6D224551D000B30A74 /* GoogleService-Info.plist */,
@@ -288,6 +291,7 @@
 				95E775052242812C00166842 /* SignOnViewController.swift in Sources */,
 				D245CB8B224849FC00797517 /* RestAPIManager.swift in Sources */,
 				95E775032241DECA00166842 /* ParameterSelectionViewController.swift in Sources */,
+				95E1A7AE225AB3DE00333491 /* Request.swift in Sources */,
 				D245CB8D22484A6B00797517 /* restAPItest.swift in Sources */,
 				95E7750122413E7600166842 /* DurationPickerViewController.swift in Sources */,
 				95E774A2223E905700166842 /* ViewController.swift in Sources */,

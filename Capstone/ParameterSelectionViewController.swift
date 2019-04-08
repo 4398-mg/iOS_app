@@ -11,25 +11,21 @@ import Firebase
 import FirebaseAuth
 import GoogleSignIn
 
-class ParameterSelectionViewController: UIViewController, DisplayViewControllerDelegate{
+protocol genreDelegate {
+    func fillGenreLabel(genrePicked:String)
+}
+
+class ParameterSelectionViewController: UIViewController, genreDelegate{
     
     @IBOutlet weak var genreLabel:UILabel!
+    @IBOutlet var tempoLabel: UILabel!
+    @IBOutlet var durationLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
-    func genreSelected(choice: String){
-        genreLabel?.text = choice
-        print(genreLabel.text ?? "nothing")
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "genrePickerViewController"){
-            let genreVC = segue.destination as! GenrePickerViewController
-            genreVC.delegate = self
-        }
-    }
     
 //    @IBAction func closeButtonTapped(_ sender: UIButton) {
 //        self.dismiss(animated: true, completion: nil)
@@ -38,6 +34,18 @@ class ParameterSelectionViewController: UIViewController, DisplayViewControllerD
     @IBAction func logOutTapped(_ sender: Any) {
         GIDSignIn.sharedInstance()?.signOut()
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func fillGenreLabel(genrePicked:String){
+        genreLabel.text = genrePicked
+    }
+    
+    func fillTempoLabel(tempoPicked:String){
+        tempoLabel.text = tempoPicked
+    }
+    
+    func fillDurationLabel(durationPicked:String){
+        durationLabel.text = durationPicked
     }
     
 }
