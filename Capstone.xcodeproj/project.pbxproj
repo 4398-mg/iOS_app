@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8314D91B6E5794AF8AB2CF7E /* Pods_Capstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B14995B41CC6968C45D81C /* Pods_Capstone.framework */; };
+		95C21E0C225BA29100462A9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C21E0A225BA29100462A9B /* Main.storyboard */; };
 		95DC9A6E224551D000B30A74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95DC9A6D224551D000B30A74 /* GoogleService-Info.plist */; };
 		95E1A784225127A600333491 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1A783225127A600333491 /* PlayerViewController.swift */; };
 		95E1A7862251297300333491 /* The Big Country.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95E1A7852251297300333491 /* The Big Country.mp3 */; };
 		95E1A7AE225AB3DE00333491 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1A7AD225AB3DE00333491 /* Request.swift */; };
 		95E774A0223E905700166842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7749F223E905700166842 /* AppDelegate.swift */; };
 		95E774A2223E905700166842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E774A1223E905700166842 /* ViewController.swift */; };
-		95E774A5223E905700166842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E774A3223E905700166842 /* Main.storyboard */; };
 		95E774AA223E905700166842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E774A8223E905700166842 /* LaunchScreen.storyboard */; };
 		95E774FD22412B5600166842 /* GenrePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E774FC22412B5600166842 /* GenrePickerViewController.swift */; };
 		95E774FF22413C0400166842 /* TempoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E774FE22413C0400166842 /* TempoPickerViewController.swift */; };
@@ -23,7 +23,6 @@
 		95E775052242812C00166842 /* SignOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E775042242812C00166842 /* SignOnViewController.swift */; };
 		D245CB8B224849FC00797517 /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245CB8A224849FC00797517 /* RestAPIManager.swift */; };
 		D245CB8D22484A6B00797517 /* restAPItest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245CB8C22484A6B00797517 /* restAPItest.swift */; };
-		D28735DC224C0E4900126B53 /* btn_google_signin_dark_pressed_ios@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D28735DB224C0E4900126B53 /* btn_google_signin_dark_pressed_ios@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +31,7 @@
 		386FE61B988B99C4E6D5873D /* Pods-Capstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Capstone/Pods-Capstone.debug.xcconfig"; sourceTree = "<group>"; };
 		647D12C4862AE0EDEEB52B7D /* Pods-Capstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capstone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capstone/Pods-Capstone.release.xcconfig"; sourceTree = "<group>"; };
 		75B14995B41CC6968C45D81C /* Pods_Capstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C21E0B225BA29100462A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Capstone/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95DC9A6D224551D000B30A74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		95E1A783225127A600333491 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		95E1A7852251297300333491 /* The Big Country.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Big Country.mp3"; sourceTree = "<group>"; };
@@ -39,7 +39,6 @@
 		95E7749C223E905700166842 /* Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E7749F223E905700166842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E774A1223E905700166842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		95E774A4223E905700166842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95E774A9223E905700166842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95E774AB223E905700166842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95E774FC22412B5600166842 /* GenrePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +48,6 @@
 		95E775042242812C00166842 /* SignOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOnViewController.swift; sourceTree = "<group>"; };
 		D245CB8A224849FC00797517 /* RestAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIManager.swift; sourceTree = "<group>"; };
 		D245CB8C22484A6B00797517 /* restAPItest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restAPItest.swift; sourceTree = "<group>"; };
-		D28735DB224C0E4900126B53 /* btn_google_signin_dark_pressed_ios@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_google_signin_dark_pressed_ios@2x.png"; sourceTree = "<group>"; };
 		D28735DD224C0E6D00126B53 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -97,15 +95,14 @@
 		95E7749E223E905700166842 /* Capstone */ = {
 			isa = PBXGroup;
 			children = (
+				95C21E0A225BA29100462A9B /* Main.storyboard */,
 				95E7749F223E905700166842 /* AppDelegate.swift */,
-				95E774A3223E905700166842 /* Main.storyboard */,
 				95E1A783225127A600333491 /* PlayerViewController.swift */,
 				D245CB8A224849FC00797517 /* RestAPIManager.swift */,
 				95E775042242812C00166842 /* SignOnViewController.swift */,
 				95E774A1223E905700166842 /* ViewController.swift */,
 				D28735DD224C0E6D00126B53 /* MyPlayground.playground */,
 				D245CB8C22484A6B00797517 /* restAPItest.swift */,
-				D28735DB224C0E4900126B53 /* btn_google_signin_dark_pressed_ios@2x.png */,
 				95E775022241DECA00166842 /* ParameterSelectionViewController.swift */,
 				95E774FC22412B5600166842 /* GenrePickerViewController.swift */,
 				95E774FE22413C0400166842 /* TempoPickerViewController.swift */,
@@ -194,10 +191,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				95E774AA223E905700166842 /* LaunchScreen.storyboard in Resources */,
-				D28735DC224C0E4900126B53 /* btn_google_signin_dark_pressed_ios@2x.png in Resources */,
+				95C21E0C225BA29100462A9B /* Main.storyboard in Resources */,
 				95DC9A6E224551D000B30A74 /* GoogleService-Info.plist in Resources */,
 				95E1A7862251297300333491 /* The Big Country.mp3 in Resources */,
-				95E774A5223E905700166842 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,10 +300,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		95E774A3223E905700166842 /* Main.storyboard */ = {
+		95C21E0A225BA29100462A9B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				95E774A4223E905700166842 /* Base */,
+				95C21E0B225BA29100462A9B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

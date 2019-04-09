@@ -8,23 +8,25 @@
 
 import UIKit
 
-var genreChoice:String = ""
+protocol GenreDelegate {
+    func fillGenreLabel(genrePicked:String)
+}
+
 class GenrePickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
-    let genres = ["", "blues", "classical", "country", "electronic", "folk", "jazz", "pop", "rock"]
+    let genres = ["blues", "classical", "country", "electronic", "folk", "jazz", "pop", "rock"]
+    var genreChoice:String = ""
     @IBOutlet weak var genrePicker:UIPickerView!
-    var mainViewController:ParameterSelectionViewController?
+    var delegate:GenreDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
         genrePicker.delegate = self
-        //
+        
     }
     
     @IBAction func closeButtonTapped(sender: UIButton){
         self.dismiss(animated: true, completion: nil)
-        mainViewController?.fillDurationLabel(durationPicked: genreChoice)
+        delegate?.fillGenreLabel(genrePicked: genreChoice)
         print(genreChoice)
     }
     

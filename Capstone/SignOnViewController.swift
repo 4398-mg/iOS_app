@@ -15,11 +15,13 @@ class SignOnViewController: UIViewController, GIDSignInUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //print(Auth.auth().currentUser?.email)
+        
         GIDSignIn.sharedInstance().uiDelegate = self
-        confirmAndContinue.isEnabled = false
+        confirmAndContinue.isHidden = true
         
         if(Auth.auth().currentUser != nil){
-            confirmAndContinue.isEnabled = true
+            confirmAndContinue.isHidden = false
         }
         
     }

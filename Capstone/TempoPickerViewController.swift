@@ -8,10 +8,15 @@
 
 import UIKit
 
+protocol TempoDelegate {
+    func fillTempoLabel(tempoPicked:String)
+}
+
 class TempoPickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    let tempos = ["1", "2", "3", "4", "5"]
+    let tempos = ["", "1", "2", "3", "4", "5"]
     var tempoChoice:String = ""
     @IBOutlet weak var tempoPicker: UIPickerView!
+    var delegate:TempoDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +25,8 @@ class TempoPickerViewController: UIViewController, UIPickerViewDataSource, UIPic
     
     @IBAction func closeButtonTapped(sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
+        delegate?.fillTempoLabel(tempoPicked: tempoChoice)
+        print(tempoChoice)
     }
 
     func numberOfComponents(in pickerView: UIPickerView)-> Int{
@@ -31,8 +38,11 @@ class TempoPickerViewController: UIViewController, UIPickerViewDataSource, UIPic
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        tempoChoice = tempos[row]
         return tempos[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        tempoChoice = tempos[row]
     }
     
 
