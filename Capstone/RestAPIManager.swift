@@ -8,12 +8,59 @@
 
 import UIKit
 import SwiftyJSON
+import Alamofire
 
 
 typealias ServiceResponse = (JSON, Error?) -> Void
 
 class RestAPIManager: NSObject {
 
+    
+    
+    func getSong(completionHandler:( @escaping (String) -> Void) ) {
+        var song : String = ""
+        let parameters: Parameters = ["genre" : "folk", "tempo" : "slow", "duration" : "short"]
+        
+        Alamofire.request("http://api.thewimbo.me/generate_song", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+            print("Request: \(String(describing: response.request))")   // original url request
+            print("Response: \(String(describing: response.response))") // http url response
+            print("Result: \(response.result)")                         // response serialization result
+            
+            if let json = response.result.value {
+                print("JSON: \(json)") // serialized json response
+                print(JSON(json)["location"])//print link
+                // song = JSON(json)["location"].stringValue
+                song = JSON(json)["location"].stringValue
+                completionHandler(song)
+            }
+            
+            
+            
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Data: \(utf8Text)") // original server data as UTF8 string
+            }
+            
+            
+            
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*
     static let SharedInstance = RestAPIManager()
     let baseURL = "http://api.thewimbo.me/"
     
@@ -78,6 +125,7 @@ class RestAPIManager: NSObject {
             onCompletion(JSON(), nil)
         }
     }
+    */
     
     
 }
