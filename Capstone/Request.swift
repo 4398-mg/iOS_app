@@ -9,16 +9,17 @@
 import Foundation
 
 class Request{
-    var genre:String
-    var tempo:String
-    var duration:String
+    var genre:String = ""
+    var tempo:String = ""
+    var duration:String = ""
     //var name:String
     
+    /*
     init(genreC:String, tempoC:String, durationC:String) {
         self.genre = genreC
         self.tempo = tempoC
         self.duration = durationC
         //self.name =
     }
-    
+    */
 }

@@ -17,9 +17,12 @@ class RestAPIManager: NSObject {
 
     
     
-    func getSong(completionHandler:( @escaping (String) -> Void) ) {
-        var song : String = ""
-        let parameters: Parameters = ["genre" : "folk", "tempo" : "slow", "duration" : "short"]
+    func generateSong(parameters : Parameters ,completionHandler:( @escaping (songObj) -> Void) ) {
+        let song : songObj = songObj()
+        
+       // let parameters: Parameters = ["genre" : "folk", "tempo" : "slow", "duration" : "short"]
+        print("generate song : ")
+        print(parameters)
         
         Alamofire.request("http://api.thewimbo.me/generate_song", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
             print("Request: \(String(describing: response.request))")   // original url request
@@ -30,7 +33,15 @@ class RestAPIManager: NSObject {
                 print("JSON: \(json)") // serialized json response
                 print(JSON(json)["location"])//print link
                 // song = JSON(json)["location"].stringValue
-                song = JSON(json)["location"].stringValue
+                song.location = JSON(json)["location"].stringValue
+                song.duration = JSON(json)["duration"].stringValue
+                song.tempo = JSON(json)["tempo"].stringValue
+                song.song_id = JSON(json)["song_id"].stringValue
+                song.song_name = JSON(json)["song_name"].stringValue
+                song.timeStamp = JSON(json)["timestamp"].stringValue
+                song.genre = JSON(json)["genre"].stringValue
+                
+                
                 completionHandler(song)
             }
             

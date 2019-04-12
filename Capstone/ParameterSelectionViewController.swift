@@ -16,6 +16,8 @@ class ParameterSelectionViewController: UIViewController, GenreDelegate, TempoDe
     @IBOutlet var genreLabel: UILabel!
     @IBOutlet weak var tempoLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
+    var request : Request = Request()
+    
     
     
     override func viewDidLoad() {
@@ -32,14 +34,18 @@ class ParameterSelectionViewController: UIViewController, GenreDelegate, TempoDe
     
     func fillGenreLabel(genrePicked:String){
         genreLabel.text = genrePicked
+        request.genre = genrePicked
+        
     }
     
     func fillTempoLabel(tempoPicked:String){
         tempoLabel.text = tempoPicked
+        request.tempo = tempoPicked
     }
     
     func fillDurationLabel(durationPicked:String){
         durationLabel.text = durationPicked
+        request.duration = durationPicked
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -56,6 +62,12 @@ class ParameterSelectionViewController: UIViewController, GenreDelegate, TempoDe
                 durationVC.delegate = self
             }
         }
+        guard let playerViewController = segue.destination as? PlayerViewController
+            else{
+                return
+        }
+            playerViewController.request = request
+       
         
     }
 }

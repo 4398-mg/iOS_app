@@ -8,22 +8,33 @@
 
 import UIKit
 import AVFoundation
+import Alamofire
 
 class PlayerViewController: UIViewController {
 
     var rm = RestAPIManager()
     var audioPlayer : AVPlayer?
     var playerItem : AVPlayerItem?
+    var request : Request?
+    @IBOutlet weak var  songName  : UILabel!
+    @IBOutlet weak var  songGenre : UILabel!
+    @IBOutlet weak var  songTempo : UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        rm.getSong() { response in
+        let parameters : Parameters =  [ "genre" : request!.genre, "tempo" : request!.tempo, "duration" : request!.duration ]
+        print("playerVC parameters")
+        print(parameters)
+        rm.generateSong( parameters: parameters ) { response in
             
             //song = JSON(response)["location"].stringValue
-            let url = URL(string: response)
+            let url = URL(string: response.location)
             let playerItem:AVPlayerItem = AVPlayerItem(url: url!)
             self.audioPlayer = AVPlayer(playerItem: playerItem)
+            self.songName.text = response.song_name
+            self.songGenre.text = response.genre
+            self.songTempo.text = response.tempo
         }
         // Do any additional setup after loading the view.
     

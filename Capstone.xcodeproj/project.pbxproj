@@ -20,6 +20,7 @@
 		95E7750122413E7600166842 /* DurationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7750022413E7600166842 /* DurationPickerViewController.swift */; };
 		95E775032241DECA00166842 /* ParameterSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E775022241DECA00166842 /* ParameterSelectionViewController.swift */; };
 		95E775052242812C00166842 /* SignOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E775042242812C00166842 /* SignOnViewController.swift */; };
+		D23A2FE42261384A00695B09 /* songObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23A2FE32261384A00695B09 /* songObj.swift */; };
 		D245CB8B224849FC00797517 /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245CB8A224849FC00797517 /* RestAPIManager.swift */; };
 		D245CB8D22484A6B00797517 /* restAPItest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D245CB8C22484A6B00797517 /* restAPItest.swift */; };
 		D25EFE82225E872B0022AD64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25EFE81225E872B0022AD64 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		95E7750022413E7600166842 /* DurationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPickerViewController.swift; sourceTree = "<group>"; };
 		95E775022241DECA00166842 /* ParameterSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSelectionViewController.swift; sourceTree = "<group>"; };
 		95E775042242812C00166842 /* SignOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOnViewController.swift; sourceTree = "<group>"; };
+		D23A2FE32261384A00695B09 /* songObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = songObj.swift; sourceTree = "<group>"; };
 		D245CB8A224849FC00797517 /* RestAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIManager.swift; sourceTree = "<group>"; };
 		D245CB8C22484A6B00797517 /* restAPItest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restAPItest.swift; sourceTree = "<group>"; };
 		D25EFE81225E872B0022AD64 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				95E775022241DECA00166842 /* ParameterSelectionViewController.swift */,
 				95E774FC22412B5600166842 /* GenrePickerViewController.swift */,
 				95E774FE22413C0400166842 /* TempoPickerViewController.swift */,
+				D23A2FE32261384A00695B09 /* songObj.swift */,
 				95E7750022413E7600166842 /* DurationPickerViewController.swift */,
 				95E1A7AD225AB3DE00333491 /* Request.swift */,
 				95E774A8223E905700166842 /* LaunchScreen.storyboard */,
@@ -289,6 +292,7 @@
 				95E775032241DECA00166842 /* ParameterSelectionViewController.swift in Sources */,
 				95E1A7AE225AB3DE00333491 /* Request.swift in Sources */,
 				D245CB8D22484A6B00797517 /* restAPItest.swift in Sources */,
+				D23A2FE42261384A00695B09 /* songObj.swift in Sources */,
 				95E7750122413E7600166842 /* DurationPickerViewController.swift in Sources */,
 				95E774A2223E905700166842 /* ViewController.swift in Sources */,
 				95E774A0223E905700166842 /* AppDelegate.swift in Sources */,

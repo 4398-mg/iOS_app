@@ -13,7 +13,7 @@ protocol TempoDelegate {
 }
 
 class TempoPickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    let tempos = ["", "1", "2", "3", "4", "5"]
+    let tempos = ["", "slow", "medium", "fast"]
     var tempoChoice:String = ""
     @IBOutlet weak var tempoPicker: UIPickerView!
     var delegate:TempoDelegate?
