@@ -59,16 +59,103 @@ class RestAPIManager: NSObject {
     
     
     
+    func getHistory(parameters : Parameters ,completionHandler:( @escaping ( [songObj] ) -> Void) )  {
+    
+        var history = [songObj]()
+
+     
+        print(parameters)
+        
+      Alamofire.request("http://api.thewimbo.me/history", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+        
+            print("Request: \(String(describing: response.request))")   // original url request
+            print("Response: \(String(describing: response.response))") // http url response
+            print("Result: \(response.result)")                         // response serialization result
+            
+            
+            
+            if let json = response.result.value  {
+                print("JSON: \(json)") // serialized json response
+                
+                
+                var n = 0
+                for _ in JSON(json)["history"] {
+                    
+                let song = songObj.init()
+                song.location = JSON(json)["history"][n]["location"].stringValue
+                song.duration = JSON(json)["history"][n]["duration"].stringValue
+                song.tempo = JSON(json)["history"][n]["tempo"].stringValue
+                song.song_id = JSON(json)["history"][n]["song_id"].stringValue
+                song.timeStamp = JSON(json)["history"][n]["timestamp"].stringValue
+                song.genre = JSON(json)["history"][n]["genre"].stringValue
+                  
+                    song.song_name = JSON(json)["history"][n]["song_name"].stringValue
+                    print("song_name \(n) : \(JSON(json)["history"][n]["song_name"].stringValue)")
+
+                
+                    history.append(song)
+                    n += 1
+                }
+            }
+         completionHandler(history)
+        }
+    
+        
+    
+    
+    }
     
     
     
     
     
+    func deleteSong(parameters : Parameters ,completionHandler:( @escaping ( String ) -> Void) )  {
+        
+        //var history = [songObj]()
+        
+        
+        print(parameters)
+        
+        Alamofire.request("http://api.thewimbo.me/remove_song", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+            
+            print("Request: \(String(describing: response.request))")   // original url request
+            print("Response: \(String(describing: response.response))") // http url response
+            print("Result: \(response.result)")                         // response serialization result
+            
+            
+            
+            if let json = response.result.value  {
+                print("JSON: \(json)") // serialized json response
+                
+                
+         
+            }
+            completionHandler(response.result.description)
+        }
+    }
     
-    
-    
-    
-    
+    func editSong(parameters: Parameters, completionHandler: ( @escaping (String)-> Void)){
+        
+     
+        
+        Alamofire.request("http://api.thewimbo.me/edit_song", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+            
+            print("Request: \(String(describing: response.request))")   // original url request
+            print("Response: \(String(describing: response.response))") // http url response
+            print("Result: \(response.result)")                         // response serialization result
+            
+            
+            
+            if let json = response.result.value  {
+                print("JSON: \(json)") // serialized json response
+                
+                
+                
+            }
+            completionHandler(response.result.description)
+        }
+        
+    }
     
     
     /*
@@ -139,4 +226,5 @@ class RestAPIManager: NSObject {
     */
     
     
+
 }

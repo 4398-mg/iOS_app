@@ -10,21 +10,53 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import GoogleSignIn
+import Alamofire
 
 class ParameterSelectionViewController: UIViewController, GenreDelegate, TempoDelegate, DurationDelegate{
     
     @IBOutlet var genreLabel: UILabel!
     @IBOutlet weak var tempoLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
+   
     var request : Request = Request()
-    
-    
+    var rm = RestAPIManager()
+    var email : String = ""
+    var profileID : String = ""
+    var historyCount: Int = 0
+    var history = [songObj]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        if GIDSignIn.sharedInstance()?.currentUser != nil{
+            email = ((GIDSignIn.sharedInstance().currentUser.profile.email!) )
+            
+            profileID  = ((GIDSignIn.sharedInstance().currentUser.authentication.idToken!))
+            
+        }
+       
+        let parameters : Parameters =  [ "profileID" :  profileID , "profileEmail" : email ]
         
+       
+        if GIDSignIn.sharedInstance()?.currentUser != nil{
+            rm.getHistory(parameters: parameters) { response in
+                
+                print(response[0].song_name)
+                print(response[1].song_name)
+                print(response[2].song_name)
+                print(response[3].song_name)
+                print(response[4].song_name)
+                //  print(response.count)
+              self.historyCount = response.count
+                
+              self.history.append(contentsOf: response)
+                
+                
+            }
         
     }
+    }
+    
     
     
     @IBAction func logOutTapped(_ sender: Any) {
@@ -67,7 +99,7 @@ class ParameterSelectionViewController: UIViewController, GenreDelegate, TempoDe
                 return
         }
             playerViewController.request = request
-       
+            playerViewController.history = history
         
     }
 }

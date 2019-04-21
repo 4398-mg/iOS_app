@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 if error == nil{
                     print(result?.user.email as Any)
                     print(result?.user.displayName as Any)
-            
+                
                 }else{
                     print(error?.localizedDescription as Any)
                 }

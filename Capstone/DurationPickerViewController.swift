@@ -14,7 +14,7 @@ protocol DurationDelegate {
 
 class DurationPickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     @IBOutlet weak var durationPicker: UIPickerView!
-    var durationOptions = ["", "short", "medium", "long" ]
+    var durationOptions = [ "short", "medium", "long" ]
    
   
 

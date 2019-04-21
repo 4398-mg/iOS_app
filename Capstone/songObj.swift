@@ -9,15 +9,31 @@
 import Foundation
 
 
-class songObj {
+ class songObj {
    
-    var duration = ""
-    var genre = ""
-    var location = ""
-    var song_id = ""
-    var tempo = ""
-    var timeStamp = ""
-    var song_name = ""
+    var duration : String
+    var genre : String
+    var location : String
+    var song_id: String
+    var tempo: String
+    var timeStamp: String
+    var song_name: String
     
+    init(){
+        self.duration = ""
+        self.genre = ""
+        self.location = ""
+        self.song_id = ""
+        self.tempo = ""
+        self.timeStamp = ""
+        self.song_name = ""
+    }
+    
+    func getSong() -> String {
+       
+        return self.song_name
+    }
+    
+  
     
 }
