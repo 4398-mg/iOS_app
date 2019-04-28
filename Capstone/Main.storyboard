@@ -176,6 +176,7 @@
                     </view>
                     <connections>
                         <outlet property="durationLabel" destination="8rg-pi-Gj7" id="J2y-6a-svR"/>
+                        <outlet property="generateButton" destination="1wF-eJ-pTD" id="r4k-bD-eTJ"/>
                         <outlet property="genreLabel" destination="bUn-lX-Xfn" id="9IV-fg-7u9"/>
                         <outlet property="tempoLabel" destination="UIy-SQ-8xe" id="OoL-va-P0K"/>
                     </connections>

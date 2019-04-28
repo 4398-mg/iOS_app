@@ -17,6 +17,7 @@ class ParameterSelectionViewController: UIViewController, GenreDelegate, TempoDe
     @IBOutlet var genreLabel: UILabel!
     @IBOutlet weak var tempoLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var generateButton : UIButton!
    
     var request : Request = Request()
     var rm = RestAPIManager()

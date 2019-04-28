@@ -99,11 +99,7 @@ class PlayerViewController: UIViewController , UITableViewDelegate, UITableViewD
      if GIDSignIn.sharedInstance()?.currentUser != nil{
          rm.getHistory(parameters: parameters) { response in
         
-            print(response[0].song_name)
-            print(response[1].song_name)
-            print(response[2].song_name)
-            print(response[3].song_name)
-            print(response[4].song_name)
+         
           //  print(response.count)
            //historyCount = response.count
             
@@ -139,7 +135,7 @@ class PlayerViewController: UIViewController , UITableViewDelegate, UITableViewD
         return cell
     }
   
-
+    // song tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let url = URL(string: history[indexPath.row].location)
         let playerItem: AVPlayerItem = AVPlayerItem(url: url!)
@@ -159,17 +155,21 @@ class PlayerViewController: UIViewController , UITableViewDelegate, UITableViewD
     
     
     @IBAction func play(_ sender: Any) {
+       
         audioPlayer!.play()
+    
     }
     
     @IBAction func pause(_ sender: Any) {
+        
         audioPlayer!.pause()
-        }
-    
+        
+    }
     
     @IBAction func restart(_ sender: Any){
+     
         audioPlayer!.play()
-    
+        
     }
        // print(historyCount)
     
@@ -214,14 +214,9 @@ class PlayerViewController: UIViewController , UITableViewDelegate, UITableViewD
         }
     
     @IBAction func saveTapped(){
-        
-        
-        
-        
+
         editSongTB.isEnabled = false
         editSongTB.isHidden = true
-        
-        
         songName.text = editSongTB.text
         self.history[currentSongIndex!].song_name = editSongTB.text!
         

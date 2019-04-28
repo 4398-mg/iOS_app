@@ -13,7 +13,7 @@ protocol GenreDelegate {
 }
 
 class GenrePickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
-    let genres = [ "classical", "folk", "jazz", "game", "rock"]
+    let genres = [ "classical", "folk", "jazz", "game"]
     var genreChoice:String = ""
     @IBOutlet weak var genrePicker:UIPickerView!
     var delegate:GenreDelegate?
