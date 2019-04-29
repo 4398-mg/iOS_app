@@ -17,10 +17,10 @@ The features of this App are:
 
 * Log in using Gmail 
   * if logged in you can:
-   * generate new songs and add them to your history
-   * edit song titles
-   * delete songs
-   * play any song from your history
+    * generate new songs and add them to your history
+    * edit song titles
+    * delete songs
+    * play any song from your history
   * if not logged in:
     * generate songs
     * play generated song
